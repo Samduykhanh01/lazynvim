@@ -10,16 +10,41 @@ vim.keymap.set(
 )
 
 -- Move line up
-vim.keymap.set("n", "<A-Up>", ":m .-2<CR>==", { noremap = true, silent = true })
+vim.keymap.set(
+  "v",
+  "<A-Up>",
+  ":m '<-2<CR>gv=gv",
+  { noremap = true, silent = true, desc = "Move line up in visual mode" }
+)
+vim.keymap.set(
+  "n",
+  "<A-Up>",
+  "<Cmd>m .-2<CR>==",
+  { noremap = true, silent = true, desc = "Move line up in normal mode" }
+)
 
 -- Move line down
-vim.keymap.set("n", "<A-Down>", ":m .+1<CR>==", { noremap = true, silent = true })
+vim.keymap.set(
+  "v",
+  "<A-Down>",
+  ":m '>+1<CR>gv=gv",
+  { noremap = true, silent = true, desc = "Move line down in visual mode" }
+)
+vim.keymap.set(
+  "n",
+  "<A-Down>",
+  "<Cmd>m .+1<CR>==",
+  { noremap = true, silent = true, desc = "Move line down in normal mode" }
+)
 
 -- Insert a new line below and move to it
---[[vim.keymap.set(
+vim.keymap.set(
   "i",
-  "<C-S-CR>",
-  '<Esc>:echo "Ctrl + Shift + Enter pressed in Insert mode"<CR>',
+  "<S-CR>",
+  '<Esc>:echo "Shift + Enter pressed in Insert mode"<CR>',
   { noremap = true, silent = true }
 )
---]]
+
+-- Map Ctrl + Backspace to move to the first non-blank character and then perform a backspace in Insert mode
+vim.keymap.set("i", "<C-BS>", "<Esc>^i<BS>", { noremap = true, silent = true })
+vim.keymap.set("n", "<C-BS>", "^i<BS>", { noremap = true, silent = true })
