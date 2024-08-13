@@ -48,3 +48,16 @@ vim.keymap.set(
 -- Map Ctrl + Backspace to move to the first non-blank character and then perform a backspace in Insert mode
 vim.keymap.set("i", "<C-BS>", "<Esc>^i<BS>", { noremap = true, silent = true })
 vim.keymap.set("n", "<C-BS>", "^i<BS>", { noremap = true, silent = true })
+
+-- Terminal in neovim
+--[[
+local lazyterm = function()
+  LazyVim.terminal(nil, { cwd = LazyVim.root(), direction = "horizontal" })
+end
+vim.keymap.set("n", "<leader>ft", lazyterm, { desc = "Terminal (Root Dir)" })
+vim.keymap.set("n", "<leader>fT", function()
+  LazyVim.terminal()
+end, { desc = "Terminal (cwd)" })
+vim.keymap.set("n", "<c-/>", lazyterm, { desc = "Terminal (Root Dir)" })
+vim.keymap.set("n", "<c-_>", lazyterm, { desc = "which_key_ignore" })
+--]]

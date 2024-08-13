@@ -5077,7 +5077,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/graphql-language-service-cli@3.4.2"
+      "id": "pkg:npm/graphql-language-service-cli@3.5.0"
     },
     "bin": {
       "graphql-lsp": "npm:graphql-lsp"
@@ -8273,7 +8273,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/Galarius/opencl-language-server@0.6.1",
+      "id": "pkg:github/Galarius/opencl-language-server@0.6.2",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -11355,7 +11355,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:gem/standard@1.39.2"
+      "id": "pkg:gem/standard@1.40.0"
     },
     "bin": {
       "standardrb": "gem:standardrb"
@@ -11430,7 +11430,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:golang/honnef.co/go/tools@v0.4.7#cmd/staticcheck"
+      "id": "pkg:golang/honnef.co/go/tools@v0.5.0#cmd/staticcheck"
     },
     "bin": {
       "staticcheck": "golang:staticcheck"
@@ -12618,7 +12618,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/%40typespec/compiler@0.59.0"
+      "id": "pkg:npm/%40typespec/compiler@0.59.1"
     },
     "bin": {
       "tsp-server": "npm:tsp-server"
