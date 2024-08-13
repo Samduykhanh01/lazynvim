@@ -5,7 +5,7 @@ mkdir -p ~/nvim-backup
 
 # Copy the configuration and data
 cp -r ~/.config/nvim ~/nvim-backup/config
-# cp -r ~/.local/share/nvim/ ~/nvim-backup/data
+cp -r ~/.local/share/nvim/ ~/nvim-backup/data
 cp ~/backup_nvim.sh ~/nvim-backup/
 
 # Navigate to the backup directory

@@ -30,7 +30,22 @@ return {
     local home = os.getenv("HOME")
     local mason_path = vim.fn.stdpath("data") .. "/mason/packages/jdtls"
     local workspace_folder = home .. "/.cache/jdtls/workspace/"
+
+    -- Determine the root directory
     local root_dir = require("jdtls.setup").find_root({ "src", ".git" })
+
+    -- Check if root_dir is found
+    if not root_dir then
+      vim.notify("Project root directory not found", vim.log.levels.ERROR)
+      return
+    end
+
+    -- Find the JAR file dynamically
+    local launcher_jar = vim.fn.glob(mason_path .. "/plugins/org.eclipse.equinox.launcher_*.jar")
+    if launcher_jar == "" then
+      vim.notify("Eclipse Equinox launcher JAR file not found in " .. mason_path .. "/plugins", vim.log.levels.ERROR)
+      return
+    end
 
     local config = {
       -- Define the command to start JDTLS with required options
@@ -50,7 +65,7 @@ return {
         "--add-opens",
         "java.base/java.lang=ALL-UNNAMED",
         "-jar",
-        mason_path .. "/plugins/org.eclipse.equinox.launcher_1.6.900.v20240613-2009.jar",
+        launcher_jar,
         "-configuration",
         mason_path .. "/config_linux",
         "-data",
