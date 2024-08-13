@@ -32,7 +32,7 @@ return {
     local workspace_folder = home .. "/.cache/jdtls/workspace/"
 
     -- Determine the root directory
-    local root_dir = require("jdtls.setup").find_root({ "src", ".git" })
+    local root_dir = require("jdtls.setup").find_root({ "java", "src", ".git" })
 
     -- Check if root_dir is found
     if not root_dir then
@@ -82,10 +82,15 @@ return {
         java = {
 
           project = {
+
             sourcePaths = {
+              "src",
               "src/main",
               "src/test",
-              "src",
+              "java",
+              "java/main",
+              "java/test",
+              "",
             }, -- Add your source paths here
           },
 
@@ -120,11 +125,16 @@ return {
       },
 
       -- Specify source directories manually
+      --[[
       sourcepaths = {
-        root_dir .. "/src",
-        root_dir .. "/src/test",
-        root_dir .. "/src/main",
+        "/src/main",
+        "/src/test",
+        "/src",
+        "/java",
+        "/java/main",
+        "/java/test",
       },
+      --]]
 
       -- Additional capabilities for JDTLS
       capabilities = require("cmp_nvim_lsp").default_capabilities(),
