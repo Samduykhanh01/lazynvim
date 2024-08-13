@@ -39,6 +39,7 @@ return {
       vim.notify("Project root directory not found", vim.log.levels.ERROR)
       return
     end
+    vim.notify("Project root directory is in" .. " " .. root_dir)
 
     -- Find the JAR file dynamically
     local launcher_jar = vim.fn.glob(mason_path .. "/plugins/org.eclipse.equinox.launcher_*.jar")
@@ -46,6 +47,7 @@ return {
       vim.notify("Eclipse Equinox launcher JAR file not found in " .. mason_path .. "/plugins", vim.log.levels.ERROR)
       return
     end
+    vim.notify("Eclipse Equinox launcher JAR file found in" .. " " .. launcher_jar)
 
     local config = {
       -- Define the command to start JDTLS with required options
@@ -78,9 +80,15 @@ return {
       -- Project-specific settings
       settings = {
         java = {
+
           project = {
-            sourcePaths = { "java/src", "src", "java" }, -- Add your source paths here
+            sourcePaths = {
+              "src/main",
+              "src/test",
+              "src",
+            }, -- Add your source paths here
           },
+
           -- Additional Java settings can be added here
 
           eclipse = {
@@ -114,6 +122,8 @@ return {
       -- Specify source directories manually
       sourcepaths = {
         root_dir .. "/src",
+        root_dir .. "/src/test",
+        root_dir .. "/src/main",
       },
 
       -- Additional capabilities for JDTLS

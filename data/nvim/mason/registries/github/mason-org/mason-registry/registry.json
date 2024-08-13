@@ -5192,7 +5192,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/elijah-potter/harper@v0.9.3",
+      "id": "pkg:github/elijah-potter/harper@v0.9.4",
       "asset": [
         {
           "target": "linux_x64_gnu",
@@ -12638,7 +12638,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:composer/vincentlanglet/twig-cs-fixer@3.0.0"
+      "id": "pkg:composer/vincentlanglet/twig-cs-fixer@3.0.1"
     },
     "bin": {
       "twig-cs-fixer": "composer:twig-cs-fixer"
