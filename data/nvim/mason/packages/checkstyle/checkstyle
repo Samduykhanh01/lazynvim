@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+exec java -jar "/home/sam/.local/share/nvim/mason/packages/checkstyle/checkstyle-10.12.6-all.jar" "$@"
