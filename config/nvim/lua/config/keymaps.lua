@@ -1,8 +1,14 @@
--- Keymaps are automatically loaded on the VeryLazy event
+-- Keymaps are automatically loaded on the VearyLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
--- vim.keymap.set("n", "<leader>sx", require("telescope.builtin").resume, { noremap = true, silent = true, desc = "Resume" })
+-- Telescopse stuff
+vim.keymap.set(
+  "n",
+  "<leader>sx",
+  require("telescope.builtin").resume,
+  { noremap = true, silent = true, desc = "Resume" }
+)
 
 -- Move line up
 vim.keymap.set(
@@ -64,3 +70,6 @@ vim.keymap.set("n", "<leader>fT", function()
 end, { desc = "Terminal (cwd)" })
 vim.keymap.set("n", "<c-/>", lazyterm, { desc = "Terminal (Root Dir)" })
 vim.keymap.set("n", "<c-_>", lazyterm, { desc = "which_key_ignore" })
+
+-- Map <leader>w to visually select the current word
+vim.keymap.set("n", "<A-w>", "viw", { noremap = true, silent = true })
