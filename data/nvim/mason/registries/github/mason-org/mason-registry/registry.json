@@ -705,7 +705,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:pypi/basedpyright@1.15.2"
+      "id": "pkg:pypi/basedpyright@1.16.0"
     },
     "schemas": {
       "lsp": "vscode:https://raw.githubusercontent.com/DetachHead/basedpyright/v{{version}}/packages/vscode-pyright/package.json"
@@ -4806,7 +4806,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/golangci/golangci-lint@v1.59.1",
+      "id": "pkg:github/golangci/golangci-lint@v1.60.1",
       "asset": [
         {
           "target": "linux_armv6l",
