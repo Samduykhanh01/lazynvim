@@ -7,7 +7,7 @@ vim.g.mapleader = " "
 
 -- Relative line number
 vim.opt.number = true
-vim.opt.relativenumber = false
+-- vim.opt.relativenumber = false
 
 -- Use spaces instead of tabs
 vim.opt.expandtab = true
@@ -32,3 +32,8 @@ vim.opt.ignorecase = true
 
 -- Add asterisks in block comments
 vim.opt.formatoptions:append({ "r" })
+
+-- Enable mouse
+vim.opt.mouse = "a"
+-- Keep cursor where it is even when I scroll off the screen
+-- vim.opt.scrolloff = 999
