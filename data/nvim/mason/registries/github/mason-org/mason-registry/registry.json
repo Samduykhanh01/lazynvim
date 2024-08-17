@@ -1088,7 +1088,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:github/bufbuild/buf@v1.36.0",
+      "id": "pkg:github/bufbuild/buf@v1.37.0",
       "asset": [
         {
           "target": "darwin_x64",
@@ -1317,7 +1317,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:pypi/cfn-lint@1.10.2"
+      "id": "pkg:pypi/cfn-lint@1.10.3"
     },
     "bin": {
       "cfn-lint": "pypi:cfn-lint"
@@ -3834,7 +3834,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:nuget/fantomas@6.3.10"
+      "id": "pkg:nuget/fantomas@6.3.11"
     },
     "bin": {
       "fantomas": "nuget:fantomas"
@@ -4313,7 +4313,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:cargo/gitlab-ci-ls@0.19.2"
+      "id": "pkg:cargo/gitlab-ci-ls@0.20.0"
     },
     "bin": {
       "gitlab-ci-ls": "cargo:gitlab-ci-ls"
@@ -4704,7 +4704,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:golang/mvdan.cc/gofumpt@v0.6.0"
+      "id": "pkg:golang/mvdan.cc/gofumpt@v0.7.0"
     },
     "bin": {
       "gofumpt": "golang:gofumpt"
@@ -6806,7 +6806,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/LuaLS/lua-language-server@3.10.3",
+      "id": "pkg:github/LuaLS/lua-language-server@3.10.4",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -7305,7 +7305,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:github/razziel89/mdslw@0.12.0",
+      "id": "pkg:github/razziel89/mdslw@0.12.2",
       "asset": [
         {
           "target": [
@@ -7943,7 +7943,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/%40nomicfoundation/solidity-language-server@0.8.4"
+      "id": "pkg:npm/%40nomicfoundation/solidity-language-server@0.8.5"
     },
     "bin": {
       "nomicfoundation-solidity-language-server": "npm:nomicfoundation-solidity-language-server"
@@ -8876,7 +8876,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:github/lkrms/pretty-php@v0.4.66",
+      "id": "pkg:github/lkrms/pretty-php@v0.4.67",
       "asset": {
         "file": "pretty-php.phar"
       }
@@ -9305,7 +9305,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/mtshiba/pylyzer@v0.0.58",
+      "id": "pkg:github/mtshiba/pylyzer@v0.0.59",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -10060,7 +10060,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:pypi/ruff-lsp@0.0.54"
+      "id": "pkg:pypi/ruff-lsp@0.0.55"
     },
     "bin": {
       "ruff-lsp": "pypi:ruff-lsp"
@@ -10082,7 +10082,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:pypi/ruff@0.6.0"
+      "id": "pkg:pypi/ruff@0.6.1"
     },
     "bin": {
       "ruff": "pypi:ruff"
@@ -10530,7 +10530,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:github/mvdan/sh@v3.8.0",
+      "id": "pkg:github/mvdan/sh@v3.9.0",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -13041,7 +13041,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/daveshanley/vacuum@v0.12.0",
+      "id": "pkg:github/daveshanley/vacuum@v0.12.1",
       "asset": [
         {
           "target": "darwin_arm64",
