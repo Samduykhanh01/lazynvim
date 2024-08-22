@@ -705,7 +705,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:pypi/basedpyright@1.16.0"
+      "id": "pkg:pypi/basedpyright@1.17.0"
     },
     "schemas": {
       "lsp": "vscode:https://raw.githubusercontent.com/DetachHead/basedpyright/v{{version}}/packages/vscode-pyright/package.json"
@@ -1047,7 +1047,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:npm/%40rokucommunity/bslint@0.8.22"
+      "id": "pkg:npm/%40rokucommunity/bslint@0.8.23"
     },
     "bin": {
       "bslint": "npm:bslint"
@@ -1088,7 +1088,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:github/bufbuild/buf@v1.37.0",
+      "id": "pkg:github/bufbuild/buf@v1.38.0",
       "asset": [
         {
           "target": "darwin_x64",
@@ -1883,7 +1883,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/eclipse-che4z/che-che4z-lsp-for-cobol@2.1.1",
+      "id": "pkg:github/eclipse-che4z/che-che4z-lsp-for-cobol@2.2.0",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -2771,7 +2771,7 @@
       "Runtime"
     ],
     "source": {
-      "id": "pkg:github/denoland/deno@v1.45.5",
+      "id": "pkg:github/denoland/deno@v1.46.1",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -3637,7 +3637,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/erg-lang/erg@v0.6.41",
+      "id": "pkg:github/erg-lang/erg@v0.6.42",
       "asset": [
         {
           "target": "darwin_x64",
@@ -6231,7 +6231,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/mason-org/julia-lsp@v1.105.2",
+      "id": "pkg:github/mason-org/julia-lsp@v1.109.2",
       "asset": [
         {
           "target": "unix",
@@ -10082,7 +10082,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:pypi/ruff@0.6.1"
+      "id": "pkg:pypi/ruff@0.6.2"
     },
     "bin": {
       "ruff": "pypi:ruff"
@@ -10775,7 +10775,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/snyk/snyk-ls@v20240820.095556",
+      "id": "pkg:github/snyk/snyk-ls@v20240822.150022",
       "asset": [
         {
           "target": "darwin_x64",
@@ -11067,7 +11067,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/some-sass-language-server@1.5.3"
+      "id": "pkg:npm/some-sass-language-server@1.5.4"
     },
     "schemas": {
       "lsp": "vscode:https://raw.githubusercontent.com/wkillerud/some-sass/some-sass-language-server@{{version}}/vscode-extension/package.json"
@@ -11134,7 +11134,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:gem/sorbet@0.5.11531",
+      "id": "pkg:gem/sorbet@0.5.11535",
       "supported_platforms": [
         "unix"
       ]
@@ -11744,7 +11744,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/realm/SwiftLint@0.56.1",
+      "id": "pkg:github/realm/SwiftLint@0.56.2",
       "asset": [
         {
           "target": "linux_x64_gnu",
@@ -12638,7 +12638,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:composer/vincentlanglet/twig-cs-fixer@3.0.1"
+      "id": "pkg:composer/vincentlanglet/twig-cs-fixer@3.0.2"
     },
     "bin": {
       "twig-cs-fixer": "composer:twig-cs-fixer"
@@ -12784,7 +12784,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/crate-ci/typos@v1.23.6",
+      "id": "pkg:github/crate-ci/typos@v1.23.7",
       "asset": [
         {
           "target": "darwin_x64",
@@ -13793,7 +13793,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:pypi/yamlfix@1.16.0"
+      "id": "pkg:pypi/yamlfix@1.17.0"
     },
     "bin": {
       "yamlfix": "pypi:yamlfix"
