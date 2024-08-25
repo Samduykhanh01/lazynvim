@@ -42,20 +42,30 @@ vim.keymap.set(
 vim.keymap.set(
   "i",
   "<S-CR>",
-  '<Esc>:echo "Shift + Enter pressed in Insert mode"<CR>',
-  { noremap = true, silent = true }
+  "<Esc><A-o>",
+  { noremap = true, silent = true, desc = "Insert a new line below ad move to it" }
 )
 
 -- Map Ctrl + Backspace to move to the first non-blank character and then perform a backspace in Insert mode
-vim.keymap.set("i", "<C-BS>", "<Esc>^i<BS>", { noremap = true, silent = true })
-vim.keymap.set("n", "<C-BS>", "^i<BS>", { noremap = true, silent = true })
+vim.keymap.set(
+  "i",
+  "<C-BS>",
+  "<Esc>^i<BS>",
+  { noremap = true, silent = true, desc = "Move to the first non-blank character and backspace" }
+)
+vim.keymap.set(
+  "n",
+  "<C-BS>",
+  "^i<BS>",
+  { noremap = true, silent = true, desc = "Move to the first non-blank character and backspace" }
+)
 
 -- Select all
-vim.keymap.set("n", "<C-a>", "gg<S-v>G")
+vim.keymap.set("n", "<C-a>", "gg<S-v>G", { desc = "Select all" })
 
 -- Split window
-vim.keymap.set("n", "ss", ":split<Return>", { noremap = true, silent = true })
-vim.keymap.set("n", "sv", ":vsplit<Return>", { noremap = true, silent = true })
+vim.keymap.set("n", "ss", ":split<Return>", { noremap = true, silent = true, desc = "Split window horizontally" })
+vim.keymap.set("n", "sv", ":vsplit<Return>", { noremap = true, silent = true, desc = "Split window vertically" })
 
 -- Tabs
 vim.keymap.set("n", "<S-tab>", ":tabedit<Return>", { noremap = true, silent = true })
@@ -72,4 +82,4 @@ vim.keymap.set("n", "<c-/>", lazyterm, { desc = "Terminal (Root Dir)" })
 vim.keymap.set("n", "<c-_>", lazyterm, { desc = "which_key_ignore" })
 
 -- Map <leader>w to visually select the current word
-vim.keymap.set("n", "<A-w>", "viw", { noremap = true, silent = true })
+vim.keymap.set("n", "<A-w>", "viw", { noremap = true, silent = true, desc = "Select the current word" })
