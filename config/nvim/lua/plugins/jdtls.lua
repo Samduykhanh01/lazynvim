@@ -29,7 +29,8 @@ return {
   opts = function()
     local home = os.getenv("HOME")
     local mason_path = vim.fn.stdpath("data") .. "/mason/packages/jdtls"
-    local workspace_folder = home .. "/.cache/jdtls/workspace/"
+    local project_name = vim.fn.fnamemodify(root_dir, ":p:h:t")
+    local workspace_folder = home .. "/.cache/jdtls/workspace/" .. project_name
 
     -- Determine the root directory
     local root_dir = require("jdtls.setup").find_root({ "java", "src", ".git" })
@@ -81,6 +82,7 @@ return {
       settings = {
         java = {
 
+          --[[
           project = {
 
             sourcePaths = {
@@ -93,6 +95,7 @@ return {
               "",
             }, -- Add your source paths here
           },
+          --]]
 
           -- Additional Java settings can be added here
 

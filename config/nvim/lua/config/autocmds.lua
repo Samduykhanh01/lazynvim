@@ -16,3 +16,16 @@ vim.api.nvim_create_autocmd("FileType", {
   group = "JDTLSSetup",
 })
 --]]
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "java",
+  callback = function()
+    local jdtls = require("jdtls")
+    local config = require("plugins.jdtls").opts()
+    if config then
+      jdtls.start_or_attach(config)
+    else
+      vim.notify("JDTLS configuration is missing", vim.log.levels.ERROR)
+    end
+  end,
+})
