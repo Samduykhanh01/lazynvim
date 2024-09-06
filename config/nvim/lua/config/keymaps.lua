@@ -41,8 +41,16 @@ vim.keymap.set(
 -- Insert a new line below and move to it
 vim.keymap.set(
   "i",
-  "<S-CR>",
+  "<C-CR>",
   "<Esc><A-o>",
+  { noremap = true, silent = true, desc = "Insert a new line below ad move to it" }
+)
+
+-- Insert a new line below and move to it
+vim.keymap.set(
+  "n",
+  "<C-CR>",
+  "<A-o>",
   { noremap = true, silent = true, desc = "Insert a new line below ad move to it" }
 )
 
