@@ -75,8 +75,13 @@ vim.keymap.set("n", "<C-a>", "gg<S-v>G", { desc = "Select all" })
 vim.keymap.set("n", "ss", ":split<Return>", { noremap = true, silent = true, desc = "Split window horizontally" })
 vim.keymap.set("n", "sv", ":vsplit<Return>", { noremap = true, silent = true, desc = "Split window vertically" })
 
--- Tabs
-vim.keymap.set("n", "<S-tab>", ":tabedit<Return>", { noremap = true, silent = true })
+-- New tab with control T
+vim.keymap.set(
+  "n",
+  "<C-t>",
+  ":tabedit<Return>",
+  { noremap = true, silent = true, desc = "Open a new tab and switch to it via Ctrl + t" }
+)
 
 -- Terminal in neovim
 local lazyterm = function()
@@ -91,3 +96,13 @@ vim.keymap.set("n", "<c-_>", lazyterm, { desc = "which_key_ignore" })
 
 -- Map <leader>w to visually select the current word
 vim.keymap.set("n", "<A-w>", "viw", { noremap = true, silent = true, desc = "Select the current word" })
+
+-- Indent the current line or selected lines in visual mode with Tab
+vim.keymap.set("v", "<Tab>", ">gv", { noremap = true, silent = true })
+-- Unindent the current line or selected lines in visual mode with Shift-Tab
+vim.keymap.set("v", "<S-Tab>", "<gv", { noremap = true, silent = true })
+
+-- Indent the current line in normal mode with Tab
+vim.keymap.set("n", "<Tab>", ">>", { noremap = true, silent = true })
+-- Unindent the current line in normal mode with Shift-Tab
+vim.keymap.set("n", "<S-Tab>", "<<", { noremap = true, silent = true })
