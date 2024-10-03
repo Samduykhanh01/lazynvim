@@ -6,8 +6,8 @@ return {
       -- PDF viewer setup
       vim.g.vimtex_view_method = "general"
       vim.g.vimtex_view_general_viewer = "okular"
-      --vim.g.vimtex_view_general_options = "--unique file:@pdf\\#src:@line@tex"
-      vim.g.vimtex_view_general_options = "--unique file:" .. vim.fn.expand("%:p:r") .. ".pdf\\#src:@line@tex"
+      vim.g.vimtex_view_general_options = "--unique file:@pdf\\#src:@line@tex"
+      -- vim.g.vimtex_view_general_options = "--unique file:" .. vim.fn.expand("%:p:r") .. ".pdf\\#src:@line@tex"
 
       -- Use latexmk for LaTeX compilation (part of TeX Live)
       vim.g.vimtex_compiler_latexmk = {

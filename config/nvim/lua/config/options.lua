@@ -37,3 +37,9 @@ vim.opt.formatoptions:append({ "r" })
 vim.opt.mouse = "a"
 -- Keep cursor where it is even when I scroll off the screen
 -- vim.opt.scrolloff = 999
+
+-- Set the textwidth
+-- vim.opt_local.textwidth = 100 -- Adjust this value as needed
+-- vim.opt.wrap = false
+-- vim.opt.linebreak = true
+-- vim.opt.formatoptions = "tcqr"
